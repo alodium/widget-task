@@ -42,10 +42,10 @@
             "timeEnd",
             "trace"
         ],
-        "no-consecutive-blank-lines": true,
+        "no-consecutive-blank-lines": false,
         "no-construct": true,
-        "no-debugger": true,
-        "no-duplicate-variable": true,
+        "no-debugger": false,
+        "no-duplicate-variable": false,
         "no-empty": true,
         "no-eval": true,
         "no-shadowed-variable": true,
@@ -58,8 +58,7 @@
             true,
             "check-catch",
             "check-else",
-            "check-open-brace",
-            "check-whitespace"
+            "check-open-brace"
         ],
         "quotemark": [true, "single", "jsx-double"],
         "radix": true,

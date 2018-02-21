@@ -12,4 +12,3 @@ create via ```create-react-app widget-task --scripts-version=react-scripts-ts```
 - Allow a special mode when a notification is a modal (no buttons, just a floating layer) that covers the center of the screen, (bigger than the size of the notification). Allow to close it with an x button.
 - Support Chrome, Firefox and Edge only. (we are doing it in brave)
 
-
