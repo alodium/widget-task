@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { Selection } from '../components/selection';
+import { ConnectedSelection } from '../components/selection';
 
 export class App extends React.Component {
     
@@ -8,7 +8,7 @@ export class App extends React.Component {
         return(
             <div className="container">
                 <h3>42</h3>
-                <Selection />
+                <ConnectedSelection />
             </div>
         );
     }
