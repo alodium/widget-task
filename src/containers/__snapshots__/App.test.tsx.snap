@@ -17,9 +17,9 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": <div>
-        i present.. the widget
-</div>,
+      "children": <h3>
+        42
+</h3>,
       "className": "container",
     },
     "ref": null,
@@ -28,11 +28,11 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": "i present.. the widget",
+        "children": "42",
       },
       "ref": null,
-      "rendered": "i present.. the widget",
-      "type": "div",
+      "rendered": "42",
+      "type": "h3",
     },
     "type": "div",
   },
@@ -42,9 +42,9 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": <div>
-          i present.. the widget
-</div>,
+        "children": <h3>
+          42
+</h3>,
         "className": "container",
       },
       "ref": null,
@@ -53,11 +53,11 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "i present.. the widget",
+          "children": "42",
         },
         "ref": null,
-        "rendered": "i present.. the widget",
-        "type": "div",
+        "rendered": "42",
+        "type": "h3",
       },
       "type": "div",
     },

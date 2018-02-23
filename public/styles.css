@@ -1,0 +1,13 @@
+/*  this could be a huge sccs blob in the end
+    buts its not, for now
+*/
+
+body{
+    background: #a5a5a2;
+}
+
+body > div > .container {
+    /*stretching*/
+    min-height: 100vh;
+    background: #ffffff;
+}

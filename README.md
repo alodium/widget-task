@@ -3,7 +3,6 @@ create via ```create-react-app widget-task --scripts-version=react-scripts-ts```
 
 #### a brief description of the task itself
 - Please use React-Redux (store)
-- The widget should work automatically when inserting the code in any page
 - API: get a string, show it as notification (The API can be called from the console, no need for UI magic).
 - Should show itself in any corner of the screen, depends on the parameter provided (topleft (tl), bottomright (br)...)
 - Should disappear after x seconds
@@ -12,3 +11,6 @@ create via ```create-react-app widget-task --scripts-version=react-scripts-ts```
 - Allow a special mode when a notification is a modal (no buttons, just a floating layer) that covers the center of the screen, (bigger than the size of the notification). Allow to close it with an x button.
 - Support Chrome, Firefox and Edge only. (we are doing it in brave)
 
+
+#### things i did
+- made something testable in boilerplate (trying to follow the tdd approach at least in the react part)
