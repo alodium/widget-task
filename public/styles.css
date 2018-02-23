@@ -11,3 +11,41 @@ body > div > .container {
     min-height: 100vh;
     background: #ffffff;
 }
+
+.widget{
+    min-width: 10vw;
+    min-height: 5vh;
+    max-height: 10vh;
+    background: lightgreen;
+}
+
+.tl{
+    position: fixed;
+    top:0;
+    left:0;
+}
+.tr{
+    position: fixed;
+    top:0;
+    right:0;
+}
+.bl{
+    position: fixed;
+    bottom:0;
+    left:0;
+}
+.br{
+    position: fixed;
+    bottom:0;
+    right:0;
+}
+
+.warning{
+    background-color: yellow;
+}
+.alert{
+    background-color: red
+}
+.success{
+    background-color: green;
+}

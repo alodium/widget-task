@@ -35,7 +35,10 @@ class Selection extends React.Component<Selection.Props, Selection.State> {
   submitWidgetProps = () => {
     
     let helperWidget = {...this.state};
-    console.log(helperWidget);
+    // console.log(helperWidget);
+    if ( this.props.widgetAction ) {
+      this.props.widgetAction.widgetAction(helperWidget);
+    }
   }
 
   render() {
