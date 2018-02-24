@@ -1,5 +1,7 @@
 ### the localportal widget task
-create via ```create-react-app widget-task --scripts-version=react-scripts-ts```
+- create via ```create-react-app widget-task --scripts-version=react-scripts-ts```
+- run via ```npm run start```
+- run tests ```npm run test```
 
 #### a brief description of the task itself
 - Please use React-Redux (store)
@@ -14,3 +16,20 @@ create via ```create-react-app widget-task --scripts-version=react-scripts-ts```
 
 #### things i did
 - made something testable in boilerplate (trying to follow the tdd approach at least in the react part)
+- after the meeting, i overthrow bdd and just made it simply work
+- i also removed the point that this code should work on every page, because we are in the react context
+##### workflow
+- boilerplating
+- minimum app and tests
+- minimum selection component
+- type widget
+- minimum widget component
+- actions / reducer
+- provider / store
+- more detail on lifecycle method to fullfil fade requirement
+- this took loke 5 hours (honestly the eslinter of create-react-app) is really messy and took me qquite some time
+##### TODO
+- make widget x-able on close, but this needs a hoc
+- queue for more then 1one widget
+
+
