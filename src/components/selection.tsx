@@ -38,6 +38,10 @@ class Selection extends React.Component<Selection.Props, Selection.State> {
     if ( elementToRemove ) {
       elementToRemove.classList.remove('fadeout');
     }
+    let elementToReShow = document.querySelector('.isProminent');
+    if ( elementToReShow ) {
+      elementToReShow.classList.remove('hidden');
+    }
 
     let helperWidget = {...this.state};
     // console.log(helperWidget);
