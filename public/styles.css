@@ -14,9 +14,12 @@ body > div > .container {
 
 .widget{
     min-width: 10vw;
+    max-width: 10vvh;
     min-height: 5vh;
     max-height: 10vh;
     background: lightgreen;
+    visibility: visible;
+    opacity: 1;
 }
 
 .tl{
@@ -48,4 +51,17 @@ body > div > .container {
 }
 .success{
     background-color: green;
+}
+
+.fadeout{
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s .5s, opacity 0s .5s linear;
+}
+
+.isProminent{
+    top: calc(100vh - 33.33vh);
+    right: calc(100vw - 75vw);
+    width: calc(100vw - 50vw);
+    height: calc(100vh - 33.33vh);
 }

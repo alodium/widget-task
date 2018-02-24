@@ -16,22 +16,44 @@ class Widget extends React.Component<Widget.Props, Widget.State> {
     super(props);
   }
 
-  // here is a decision to make,
-  // i decide to work with classnames and set them 
-  // another solution would be to give values directly to style here, but is messy
+
+  // -------lifecyvle here-----------------//
+
+
+  componentWillReceiveProps(nextProps: any) {
+    
+    if ( nextProps.widgetStore ) {
+      if ( nextProps.widgetStore.success ) {
+      setTimeout(() => {
+        let renderTarget = document.querySelector('.widget');
+        if ( renderTarget ) {
+          renderTarget.className = renderTarget.className + ' fadeout';
+        }
+        }, parseInt(nextProps.widgetStore.Widget.duration, 10) * 1000);
+      }
+    }
+  }
+
+
+  // --------render stuff here-------------//
   render() {  
     console.log('widget_prop', this.props);
 
     if ( this.props.widgetStore ) {
 
-      const { Widget } = this.props.widgetStore;
-
-      return(
-      <div className="tr widget">
-        <h3> message is : {Widget.message}</h3>
-      </div>);
+      if ( this.props.widgetStore.success ) {
+        const { Widget } = this.props.widgetStore;
+        
+        return(
+          <div className={`widget ${Widget.direction} ${Widget.type} ${Widget.isProminent ? 'isProminent ' : ''}`}>
+            <h3> message is : {Widget.message}</h3>
+          </div>);
+      }
+      if ( this.props.widgetStore.load) {
+        return(<div className="widget">Loading....</div>);
+      }
     }
-    return(<div>foo</div>);
+    return(<div>use the selection to enter widget values</div>);
   }
 }
 

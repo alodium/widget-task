@@ -43,6 +43,8 @@ class Selection extends React.Component<Selection.Props, Selection.State> {
 
   render() {
 
+    console.log(this.state);
+
     return(
       <div
         className="selection"
@@ -66,6 +68,9 @@ class Selection extends React.Component<Selection.Props, Selection.State> {
           <br />
           <input type="number" value={this.state.duration} onChange={(e) => {this.setState({duration: e.target.value}); }}/>
           <input type="text" value={this.state.message} onChange={(e) => {this.setState({message: e.target.value}); }}/>
+          <br />
+          <span>have a prominent Component?</span>
+          <input type="checkbox" checked={this.state.isProminent} onChange={(e) => this.setState({isProminent: e.target.checked})}/>
         </form>
         <button onClick={this.submitWidgetProps}>send values to widget</button>
       </div>

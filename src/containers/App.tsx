@@ -8,7 +8,6 @@ export class App extends React.Component {
     render(){
         return(
             <div className="container">
-                <h3>42</h3>
                 <ConnectedSelection />
                 <ConnectedWidget />
             </div>
