@@ -20,6 +20,8 @@ class Widget extends React.Component<Widget.Props, Widget.State> {
   // -------lifecyvle here-----------------//
 
 
+
+
   componentWillReceiveProps(nextProps: any) {
     
     if ( nextProps.widgetStore ) {
@@ -27,7 +29,7 @@ class Widget extends React.Component<Widget.Props, Widget.State> {
       setTimeout(() => {
         let renderTarget = document.querySelector('.widget');
         if ( renderTarget ) {
-          renderTarget.className = renderTarget.className + ' fadeout';
+          renderTarget.classList.add('fadeout');
         }
         }, parseInt(nextProps.widgetStore.Widget.duration, 10) * 1000);
       }
@@ -37,8 +39,7 @@ class Widget extends React.Component<Widget.Props, Widget.State> {
 
   // --------render stuff here-------------//
   render() {  
-    console.log('widget_prop', this.props);
-
+    
     if ( this.props.widgetStore ) {
 
       if ( this.props.widgetStore.success ) {

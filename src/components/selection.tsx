@@ -34,6 +34,11 @@ class Selection extends React.Component<Selection.Props, Selection.State> {
 
   submitWidgetProps = () => {
     
+    let elementToRemove = document.querySelector('.widget');
+    if ( elementToRemove ) {
+      elementToRemove.classList.remove('fadeout');
+    }
+
     let helperWidget = {...this.state};
     // console.log(helperWidget);
     if ( this.props.widgetAction ) {
@@ -42,8 +47,6 @@ class Selection extends React.Component<Selection.Props, Selection.State> {
   }
 
   render() {
-
-    console.log(this.state);
 
     return(
       <div
