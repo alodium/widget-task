@@ -28,8 +28,12 @@
 - provider / store
 - more detail on lifecycle method to fullfil fade requirement
 - this took loke 5 hours (honestly the eslinter of create-react-app) is really messy and took me qquite some time
-- applied remove fadeout effect (i decided to write it poorly by myself instead of using `"react-addons-css-transition-group": "^15.6.2",`)
+- applied remove fadeout effect (i decided to write it poorly by myself instead of using 
+`"react-addons-css-transition-group": "^15.6.2",`)
+- rewrote widget to hide it`s prominent state on click
 ##### TODO
 - queue for more then 1one widget
+- the queue should be like a wrapper for all widget components, that _.map()s over all existing elements and displays them below each other (i would herefore decide to pass a ONE fixed timout value, otherwise it would be a bit flickery)
+
 
 
