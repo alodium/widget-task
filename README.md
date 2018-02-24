@@ -30,7 +30,6 @@
 - this took loke 5 hours (honestly the eslinter of create-react-app) is really messy and took me qquite some time
 - applied remove fadeout effect (i decided to write it poorly by myself instead of using `"react-addons-css-transition-group": "^15.6.2",`)
 ##### TODO
-- make widget x-able on close, but this needs a hoc
 - queue for more then 1one widget
 
 

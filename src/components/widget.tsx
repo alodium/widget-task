@@ -36,6 +36,13 @@ class Widget extends React.Component<Widget.Props, Widget.State> {
     }
   }
 
+  hideIsProminent() {
+    let renderTarget = document.querySelector('.isProminent');
+    if ( renderTarget ) {
+      renderTarget.classList.add('hidden');
+    }
+  }
+
 
   // --------render stuff here-------------//
   render() {  
@@ -44,9 +51,17 @@ class Widget extends React.Component<Widget.Props, Widget.State> {
 
       if ( this.props.widgetStore.success ) {
         const { Widget } = this.props.widgetStore;
+
+        if ( Widget.isProminent ) {
+          return(
+            <div className={`isProminent fullscreen`}>
+            <span onClick={this.hideIsProminent}>X</span>
+            <h3> message is : {Widget.message}</h3>
+          </div>);
+        }
         
         return(
-          <div className={`widget ${Widget.direction} ${Widget.type} ${Widget.isProminent ? 'isProminent ' : ''}`}>
+          <div className={`widget ${Widget.direction} ${Widget.type} `}>
             <h3> message is : {Widget.message}</h3>
           </div>);
       }

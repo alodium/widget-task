@@ -1,0 +1,76 @@
+/*  this could be a huge sccs blob in the end
+    buts its not, for now
+*/
+
+body{
+  background: #a5a5a2;
+}
+
+body > div > .container {
+  /*stretching*/
+  min-height: 100vh;
+  background: #ffffff;
+}
+
+.widget{
+  min-width: 10vw;
+  max-width: 10vvh;
+  min-height: 5vh;
+  max-height: 10vh;
+  background: lightgreen;
+  visibility: visible;
+  opacity: 1;
+}
+
+.tl{
+  position: fixed;
+  top:0;
+  left:0;
+}
+.tr{
+  position: fixed;
+  top:0;
+  right:0;
+}
+.bl{
+  position: fixed;
+  bottom:0;
+  left:0;
+}
+.br{
+  position: fixed;
+  bottom:0;
+  right:0;
+}
+
+.warning{
+  background-color: yellow;
+}
+.alert{
+  background-color: red
+}
+.success{
+  background-color: green;
+}
+
+.fadeout{
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 1s, opacity 1s linear;
+}
+
+
+.fullscreen{
+  min-width: 20vw;
+  min-height: 20vh;
+  background: pink;
+  position: fixed;
+  z-index: 10;
+  top: calc(100vh - 66.66vh);
+  right: calc(100vw - 75vw);
+}
+
+.hidden{
+  visibility: hidden;
+  display: none;
+}
